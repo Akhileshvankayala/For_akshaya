@@ -16,9 +16,6 @@ const nextConfig = {
     "*.macaly-app.com",
     "*.macaly-user-data.dev",
   ],
-  experimental: {
-    appDir: true, // ✅ Enables the /app directory (App Router)
-  },
 };
 
 module.exports = nextConfig;
