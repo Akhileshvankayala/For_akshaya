@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
-    "prepare": "husky install"
+    
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
