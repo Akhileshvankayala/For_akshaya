@@ -4,13 +4,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
     ignoreBuildErrors: true,
   },
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+  },
   devIndicators: false,
   allowedDevOrigins: [
     "*.macaly.dev",
@@ -18,6 +16,9 @@ const nextConfig = {
     "*.macaly-app.com",
     "*.macaly-user-data.dev",
   ],
+  experimental: {
+    appDir: true, // ✅ Enables the /app directory (App Router)
+  },
 };
 
 module.exports = nextConfig;
